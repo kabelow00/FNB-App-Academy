@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="java-bsc.css">
+    </head>
+    <body>
+        <h1 id = "heading" onclick="changeText()">Functions</h1>
+        
+        <script>
+            document.getElementById("addition").innerHTML== addNumbers(5,8);
+            function changeText(params) {
+                if(document.getElementById("heading").innerHTML=='Functions'){
+                    document.getElementById("heading").innerHTML = 'is calm'
+                }   else {
+                       document.getElementById("heading").innerhtml = 'Functions'
+                }
+            }
+            function addNumbers(num1, num2){
+            return num1 + num2;
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="java-bsc.css">
+    </head>
+    <body>
+        <p>Welcome.Please log in</p>
+        <form>
+            <label for = "usernameinput">Username:</label><input type = "text" id ="ussernameinput"/><br/>
+            <label for = "passwordinput">Password:</label><input type = "text" id ="passwordinput"/>
+            <p id = "message"></p>
+        </br></br>
+        <a href="#" onclick="verifyUser">Log in</a>
+        </form>
+        <script>
+        function verifyUser(){
+            var Username = document.getElementById("usernameinput").value;
+            var Password = document.getElementById("passwordinput").value;
+
+            checkusercreds(username, Password);
+        }
+
+        function checkusercreds(username, Password) {
+            var systemUsername = "Bond"
+            var systemPassword = "007"
+
+            if(username == systemUsername && Password == systemPassword){
+                document.getElementById("message").innerHTML = "Correct, Logging you in..."
+            }
+                else{
+                    document.getElementById("message").innerHTML = "Come on, man."
+            }
+            
+        }
+        </script>
+    </body>
+</html>
